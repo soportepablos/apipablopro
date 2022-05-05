@@ -57,7 +57,7 @@ public class AuthLogin {
 
         String log = jwtUtil.getValue(tok);
         if (tok != null) {
-            System.out.println("Prueba de logeo" + log);
+//            System.out.println("Prueba de logeo" + log);
             return (log);
         }else {
             return("false");
