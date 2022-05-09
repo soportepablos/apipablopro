@@ -58,27 +58,5 @@ public class Vistas {
         repositorio.deleteById(id);
     }
   
-    //CRUD SIMPLE
-    // @GetMapping("/find/{id}")
-    // public String find(@PathVariable int id){
-    //     return "Busqueda " + id;
-    // }
 
-    // @PostMapping("/update")
-    // public Datos update(@RequestBody Datos pp) {
-    //     return pp;
-
-    // }
-
-    // @GetMapping("/delete/{id}")
-    // public String delete(@PathVariable int id){
-    //     return "Eliminacion " + id;
-    // }
-
-    // @PostMapping("/save/{id}")
-    // public String save(){
-    //     return "Guardar nuevo ";
-    // }
-    /// FIN CRUD SIMPLE
-    
 }
