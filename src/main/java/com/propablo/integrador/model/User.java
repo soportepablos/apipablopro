@@ -3,8 +3,6 @@ package com.propablo.integrador.model;
 import javax.persistence.Column;
 import javax.persistence.*;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 @Entity
 @Table(name = "user")
 public class User {
@@ -15,7 +13,6 @@ public class User {
     @Column
     private String username;
     @Column
-    // @JsonIgnore
     private String password;
     @Column
     private String rol;

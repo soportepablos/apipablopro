@@ -28,16 +28,16 @@ public class JWTUtil {
     @Value("${security.jwt.ttlMillis}")
     private long ttlMillis;
 
-    private final Logger log = LoggerFactory
-            .getLogger(JWTUtil.class);
+    private final Logger log = LoggerFactory.getLogger(JWTUtil.class);
 
     /**
      * Create a new token.
-     *
      * @param id
      * @param subject
      * @return
      */
+
+
     public String create(String id, String subject) {
 
         // The JWT signature algorithm used to sign the token

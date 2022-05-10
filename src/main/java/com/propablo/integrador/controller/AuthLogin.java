@@ -1,10 +1,7 @@
 package com.propablo.integrador.controller;
 
-import java.lang.reflect.Array;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.propablo.integrador.model.Datos;
 import com.propablo.integrador.model.User;
 import com.propablo.integrador.service.IUser;
 import com.propablo.integrador.util.JWTUtil;
@@ -13,8 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -57,7 +52,7 @@ public class AuthLogin {
 
         String log = jwtUtil.getValue(tok);
         if (tok != null) {
-//            System.out.println("Prueba de logeo" + log);
+            //System.out.println("Prueba de logeo" + log);
             return (log);
         }else {
             return("false");
