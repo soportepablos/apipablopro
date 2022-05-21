@@ -9,5 +9,6 @@ public class DatosDTO implements Serializable {
     private String dttitle;
     private String dttext;
     private String dtstatus;
-    private String dtyear; 
+    private String dtyear;
+    private String dtimage;
 }

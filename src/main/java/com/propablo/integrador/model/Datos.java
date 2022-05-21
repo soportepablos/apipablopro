@@ -31,18 +31,22 @@ public class Datos implements Serializable {
     private String dtstatus;
 
     @Column(name = "dtyear", nullable = false)
-    private String dtyear; 
+    private String dtyear;
+
+    @Column(name = "dtimage", nullable = false)
+    private String dtimage;
 
 
     //Constructor
-    public Datos(Integer id, String dttheme, String dttitle, String dttext, String dtstatus, String dtyear) {
-        this.id = id;
-        this.dttheme = dttheme;
-        this.dttitle = dttitle;
-        this.dttext = dttext;
-        this.dtstatus = dtstatus;
-        this.dtyear = dtyear;
-    }
+//    public Datos(Integer id, String dttheme, String dttitle, String dttext, String dtstatus, String dtyear) {
+//        this.id = id;
+//        this.dttheme = dttheme;
+//        this.dttitle = dttitle;
+//        this.dttext = dttext;
+//        this.dtstatus = dtstatus;
+//        this.dtyear = dtyear;
+//
+//    }
 
     public Datos() {
 
@@ -96,4 +100,11 @@ public class Datos implements Serializable {
         this.dtyear = dtyear;
     }
 
+    public String getDtimage() {
+        return dtimage;
+    }
+
+    public void setDtimage(String dtimage) {
+        this.dtimage = dtimage;
+    }
 }
